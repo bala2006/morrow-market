@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="description" content="Morrow — discover everyday things, thoughtfully found.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Morrow Market — Good things, thoughtfully found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="routes.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-sparkle" aria-hidden="true">✳</span>
+    <p>A little treat for your first order — <strong>take 15% off</strong> with code <strong>HELLOMORROW</strong></p>
+    <button class="announcement-close" aria-label="Dismiss offer">×</button>
+  </div>
+
+  <header class="site-header">
+    <div class="header-main page-shell">
+      <a class="brand" href="#top" aria-label="Morrow Market home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-word">morrow<span class="brand-dot">.</span></span>
+      </a>
+      <form class="search-form" id="search-form" role="search">
+        <label class="sr-only" for="search-input">Search products</label>
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+        <input id="search-input" type="search" placeholder="Search for something lovely..." autocomplete="off">
+        <button type="submit" class="search-submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <button class="icon-action account-action" type="button" aria-label="Your account" id="account-button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M4.5 20c.8-3.7 3.4-5.5 7.5-5.5s6.7 1.8 7.5 5.5"></path></svg>
+          <span class="action-label">Account</span>
+        </button>
+        <button class="icon-action cart-action" type="button" aria-label="Open cart, 0 items" id="cart-button">
+          <span class="cart-icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="9.5" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><span class="cart-count" id="cart-count">0</span></span>
+          <span class="action-label">Cart</span>
+        </button>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="page-shell nav-inner">
+        <div class="nav-links">
+          <a href="#discover" class="nav-link active" data-nav-category="All">Discover</a>
+          <a href="#products" class="nav-link" data-nav-category="Home">Home & living</a>
+          <a href="#products" class="nav-link" data-nav-category="Tech">Tech</a>
+          <a href="#products" class="nav-link" data-nav-category="Style">Style</a>
+          <a href="#products" class="nav-link" data-nav-category="Wellness">Wellness</a>
+          <a href="#products" class="nav-link nav-link-sale" data-nav-category="All">The good finds <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="delivery-note"><span class="delivery-dot"></span> Free shipping over $50</div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero page-shell storefront-content" id="discover" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A better kind of browse</div>
+        <h1 id="hero-title">Good things,<br><em>thoughtfully</em> found.</h1>
+        <p>Everyday essentials and little joys, picked with care and made to last.</p>
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#products">Explore the edit <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#categories">Shop by category <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-proof"><div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span><span>+</span></div><span>Loved by <strong>12k+</strong> thoughtful shoppers</span></div>
+      </div>
+      <div class="hero-visual" aria-label="A sunlit, cozy home interior">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" alt="Warm, sunlit living room with thoughtfully arranged furniture" fetchpriority="high">
+        <div class="hero-image-wash"></div>
+        <div class="hero-note"><span class="note-star" aria-hidden="true">✳</span><span><strong>Small finds.</strong><br>Big everyday energy.</span></div>
+        <div class="hero-product-chip"><div class="chip-thumb"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=150&q=75" alt="" loading="lazy"></div><div><span class="chip-label">THE SOFT GLOW LAMP</span><strong>$68.00</strong></div><span class="chip-arrow" aria-hidden="true">↗</span></div>
+        <span class="hero-caption">THE SLOW LIVING EDIT&nbsp; · &nbsp;01 / 04</span>
+      </div>
+      <div class="hero-side-mark" aria-hidden="true">GOOD · EVERYDAY · BETTER ·</div>
+    </section>
+
+    <section class="category-section page-shell storefront-content" id="categories" aria-labelledby="category-title">
+      <div class="section-heading category-heading">
+        <div><span class="section-kicker">Find your kind of good</span><h2 id="category-title">Browse by mood<span class="heading-period">.</span></h2></div>
+        <a href="#products" class="subtle-link">All categories <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="category-grid">
+        <button class="category-card category-home" data-category="Home" type="button"><span class="category-art"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=540&q=80" alt="A warm modern living room" loading="lazy"><span class="category-art-icon">⌂</span></span><span class="category-meta"><span><strong>Home & living</strong><small>Make room for calm</small></span><span class="category-arrow" aria-hidden="true">↗</span></span></button>
+        <button class="category-card category-tech" data-category="Tech" type="button"><span class="category-art"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=540&q=80" alt="Minimal headphones on a bright background" loading="lazy"><span class="category-art-icon">⌁</span></span><span class="category-meta"><span><strong>Tech, made human</strong><small>Little upgrades, big impact</small></span><span class="category-arrow" aria-hidden="true">↗</span></span></button>
+        <button class="category-card category-style" data-category="Style" type="button"><span class="category-art"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=540&q=80" alt="Colorful everyday sneakers" loading="lazy"><span class="category-art-icon">✳</span></span><span class="category-meta"><span><strong>Wear it well</strong><small>Good style, no fuss</small></span><span class="category-arrow" aria-hidden="true">↗</span></span></button>
+        <button class="category-card category-wellness" data-category="Wellness" type="button"><span class="category-art"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=540&q=80" alt="A clean, simple skincare ritual" loading="lazy"><span class="category-art-icon">☼</span></span><span class="category-meta"><span><strong>Feel-good rituals</strong><small>A little time for you</small></span><span class="category-arrow" aria-hidden="true">↗</span></span></button>
+      </div>
+    </section>
+
+    <section class="products-section storefront-content" id="products" aria-labelledby="products-title">
+      <div class="page-shell">
+        <div class="section-heading products-heading">
+          <div><span class="section-kicker" id="product-kicker">Picked for your everyday</span><h2 id="products-title">The good stuff<span class="heading-period">.</span></h2></div>
+          <div class="product-tools"><div class="result-count" id="result-count" aria-live="polite"></div><label class="sort-control"><span>Sort by</span><select id="sort-select" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option></select></label></div>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter products by category" id="filter-row">
+          <button class="filter-chip selected" type="button" data-filter="All" aria-pressed="true">Everything <span class="filter-dot"></span></button>
+          <button class="filter-chip" type="button" data-filter="Home" aria-pressed="false">Home & living</button>
+          <button class="filter-chip" type="button" data-filter="Tech" aria-pressed="false">Tech</button>
+          <button class="filter-chip" type="button" data-filter="Style" aria-pressed="false">Style</button>
+          <button class="filter-chip" type="button" data-filter="Wellness" aria-pressed="false">Wellness</button>
+        </div>
+        <div class="product-grid" id="product-grid" aria-live="polite" aria-busy="true">
+          <div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
+          <div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
+          <div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
+          <div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
+        </div>
+        <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>No good finds just yet</h3><p>Try a different search or browse all of our picks.</p><button class="button button-dark" type="button" id="reset-filters">Show everything</button></div>
+        <div class="browse-more"><button class="button button-outline" id="show-more" type="button">See all good things <span aria-hidden="true">↓</span></button></div>
+      </div>
+    </section>
+
+    <section class="promise-section page-shell storefront-content" aria-label="The Morrow promise">
+      <div class="promise-card"><span class="promise-icon">✳</span><div><strong>Good by nature</strong><p>Better materials. Better choices. Less stuff, done well.</p></div><a href="#products" aria-label="Explore thoughtful products">↗</a></div>
+      <div class="promise-card"><span class="promise-icon">♡</span><div><strong>People-first, always</strong><p>Small brands and big ideas, all with a story worth sharing.</p></div><a href="#products" aria-label="Explore independent brands">↗</a></div>
+      <div class="promise-card"><span class="promise-icon">↺</span><div><strong>Easy does it</strong><p>Free shipping over $50 and 30 days to make up your mind.</p></div><a href="#products" aria-label="Learn about easy shopping">↗</a></div>
+    </section>
+    <div class="route-view page-shell" id="route-view" aria-live="polite" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-main"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-word">morrow<span class="brand-dot">.</span></span></a><p>Make room for the good stuff.</p><div class="footer-links"><a href="#discover">Our story</a><a href="#products">Help & support</a><a href="#products">Instagram ↗</a></div></div>
+    <div class="page-shell footer-bottom"><span>© 2026 Morrow Market. A little more thoughtful.</span><span>Made for better everyday.</span></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-modal="true" role="dialog" aria-hidden="true" inert>
+    <div class="drawer-header"><div><span class="section-kicker">YOUR LITTLE GOODIES</span><h2 id="cart-title">Your bag<span class="heading-period">.</span> <span id="drawer-count">(0)</span></h2></div><button class="close-drawer" id="close-drawer" type="button" aria-label="Close cart">×</button></div>
+    <div class="cart-content" id="cart-content"></div>
+    <div class="cart-footer" id="cart-footer" hidden><div class="shipping-progress"><span class="shipping-check">✓</span><span id="shipping-message">You have free shipping!</span></div><div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div><p class="tax-note">Taxes and shipping calculated at checkout.</p><button class="button button-dark checkout-button" id="checkout-button" type="button">Continue to checkout <span aria-hidden="true">→</span></button><button class="continue-shopping" id="continue-shopping" type="button">Keep browsing</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
